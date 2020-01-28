@@ -30,7 +30,7 @@ class Solution(object):
             if x_rev >= 2**31-1 or x_rev <= -2**31: return 0
             else: return x_rev
             
-//better version
+#better version
         if x >= 2**31-1 or x <= -2**31: return 0
         else:
             strg = str(x)

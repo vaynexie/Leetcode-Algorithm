@@ -30,6 +30,6 @@ class Solution:
 
     Confused why the returned value is an integer but your answer is an array?
 
-    Note that the input array is passed in by reference, which means modification to       the input array will be known to the caller as well.
+    Note that the input array is passed in by reference, which means modification to the input array will be known to the caller as well.
     
     """"

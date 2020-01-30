@@ -15,3 +15,21 @@ class Solution(object):
                     k=i
                     total+=1
        
+#better solution
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        index = 0
+        for i in range(1,len(nums)):
+            if nums[index]!=nums[i]:
+                nums[index+1]=nums[i]
+                index+=1
+        return index+1
+    
+    """"
+    Clarification:
+
+    Confused why the returned value is an integer but your answer is an array?
+
+    Note that the input array is passed in by reference, which means modification to       the input array will be known to the caller as well.
+    
+    """"

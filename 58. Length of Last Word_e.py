@@ -22,7 +22,9 @@ class Solution(object):
                 aa+=s[i]
     
         return len(aa)
-        
+ 
+class Solution(object):
+    def lengthOfLastWord(self, s):
   #better v
     index = s[::-1].strip().find(' ')
     

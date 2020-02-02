@@ -28,7 +28,7 @@ class Solution(object):
             else:return False
             
  #better v
- class Solution(object):
+class Solution(object):
     def isIsomorphic(self, s, t):
         """
         :type s: str
@@ -39,13 +39,11 @@ class Solution(object):
         for sInd, sChr in enumerate(s):
             tChr = t[sInd]
             if sChr in s2tD: 
-                tChr_ = s2tD[sChr]
-                s[sInd] = tChr_
+                s[sInd] = s2tD[sChr]
             else:
-                tChr_ = tChr
-                if tChr_ not in s2tD.values():
+                if tChr not in s2tD.values():
                     s2tD[sChr] = tChr
-                    s[sInd] = tChr_ 
+                    s[sInd] = tChr
                 else:
                     return False 
         return (s==t)

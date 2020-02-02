@@ -30,7 +30,13 @@ class Solution(object):
             
 #bitwise operation v
 #If a number is power of 2 then it will always contain 1 set bit.
-		if n<=0:
+class Solution(object):
+    def isPowerOfTwo(self, n):
+        """
+        :type n: int
+        :rtype: bool
+        """
+        if n<=0:
             return False
         if n&(n-1) == 0:
             return True
